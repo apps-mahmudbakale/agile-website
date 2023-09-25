@@ -1,7 +1,7 @@
 @extends('layouts.welcome')
 @section('content')
     <!-- HERO-6
-                         ============================================= -->
+                                         ============================================= -->
     <section id="hero-6" class="bg-scroll hero-section division"
         style="box-shadow: inset 0 0 0 1000px rgba(23 83 164 / 73%);">
         <div class="container white-color">
@@ -48,7 +48,7 @@
 
 
     <!-- FEATURES-2
-                                ============================================= -->
+                                                ============================================= -->
     <section id="features-2" class="wide-60 features-section division">
         <div class="container">
             <p style="line-height: 50px; text-align:justify;">The AGILE Project works with the Federal Government of Nigeria
@@ -154,7 +154,7 @@
     </div> <!-- END STATISTIC-1 -->
 
     <!-- FEATURES-2
-                                ============================================= -->
+                                                ============================================= -->
     <section id="features-2" class="wide-60 features-section division">
         <div class="container">
             <h2 class="text-center py-2">STATE SITUATION REPORT</h2>
@@ -312,7 +312,7 @@
         </div> <!-- End container -->
     </section> <!-- END FEATURES-2 -->
     <!-- FEATURES-2
-                                ============================================= -->
+                                                ============================================= -->
     <section id="features-2" class="wide-60 features-section division">
         <div class="container">
             <h2 class="text-center py-2">Targeted Areas in Kano State</h2>
@@ -323,9 +323,8 @@
 
     <script>
         const map = L.map('map').setView([12.000000, 8.516667], 12);
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        L.tileLayer('', {
             maxZoom: 19,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
         const marker = L.marker([11.9729149, 8.4232203]).addTo(map);
         marker.bindTooltip("my tooltip text").openTooltip();
@@ -392,16 +391,19 @@
         <div class="container">
             <h2 class="text-center py-2">Videos Of Girls Debating</h2>
             <div class="containerv">
-        <div class="videos">
-            <video class="active" src="videos/Send Email Using Mailjet(Alternative to Gmail SMTP Server) in PHP.mp4" muted></video>
-            <video src="videos/TEACH YOURSELF EASY HAUSA DANCE.mp4" muted></video>
-            <video src="videos/Watch When Nigerian Military School Boys Takes Center Stage,,,,,, Mr President Was Amazed,,,,,,.mp4" muted></video>
-            <video src="videos/video4.mp4" muted></video>
-        </div>
-        <div class="main-video">
-            <video src="videos/TEACH YOURSELF EASY HAUSA DANCE.mp4" muted controls autoplay></video>
-        </div>
-    </div>
+                <div class="videos">
+                    <video class="active"
+                        src="videos/Send Email Using Mailjet(Alternative to Gmail SMTP Server) in PHP.mp4" muted></video>
+                    <video src="videos/TEACH YOURSELF EASY HAUSA DANCE.mp4" muted></video>
+                    <video
+                        src="videos/Watch When Nigerian Military School Boys Takes Center Stage,,,,,, Mr President Was Amazed,,,,,,.mp4"
+                        muted></video>
+                    <video src="videos/video4.mp4" muted></video>
+                </div>
+                <div class="main-video">
+                    <video src="videos/TEACH YOURSELF EASY HAUSA DANCE.mp4" muted controls autoplay></video>
+                </div>
+            </div>
         </div>
     </section> <!-- END FEATURES-2 -->
 
@@ -409,12 +411,147 @@
     <section id="features-2" class="wide-60 features-section division">
         <div class="container">
             <h2 class="text-center py-2">Demographics</h2>
-           
+            <div class="row" style="border: 2px solid #3d709b; padding: 28px; border-radius: 7px;">
+                <div class="col-md-6">
+                    <div style="margin: auto; width: 50%; padding: 10px;">
+                        <h5 align="center">Not in School</h5>
+                        <br />
+                        <div class="pie animate no-round" style="--p:75;--c:orange;"> 75%</div>
+                        <br />
+                        <p class="text-justify" style="padding: inherit;">This will hold stats of students who are not in
+                            school due to financial, traditional or other
+                            reasons </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div style="margin: auto; width: 50%; padding: 10px;">
+                        <h5 align="center">In School</h5>
+                        <br />
+                        <div class="pie animate no-round" style="--p:80;--c:blue;"> 80%</div>
+                        <br />
+                        <p class="text-justify" style="padding: inherit;">These are students actively in school and having
+                            the AGILE experience </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div style="margin: auto; width: 50%; padding: 10px;">
+                        <h5 align="center">Dropped Out</h5>
+                        <br />
+                        <div class="pie animate no-round" style="--p:50;--c:red;"> 50%</div>
+                        <br />
+                        <p class="text-justify" style="padding: inherit;">These are numbers of students who before AGILE
+                            dropped out of school for financial or other reasons.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div style="margin: auto; width: 50%; padding: 10px;">
+                        <h5 align="center">Finished School</h5>
+                        <br />
+                        <div class="pie animate no-round" style="--p:25;--c:green;">25%</div>
+                        <br />
+                        <p class="text-justify" style="padding: inherit;">This represents the students currently graduated
+                            into post secondary education by AGILE</p>
+                    </div>
+                </div>
+            </div>
+            <p></p>
+            <h5 align="center">LEVELS OF DEMOGRAPHIC IMPROVEMENT DURING  THE AGILE EXPERIENCE </h5>
+            <style type="text/css">
+                td.value {
+                    background-image: url(gridline58.gif);
+                    background-repeat: repeat-x;
+                    background-position: left top;
+                    border-left: 1px solid #e5e5e5;
+                    border-right: 1px solid #e5e5e5;
+                    padding: 0;
+                    border-bottom: none;
+                    background-color: transparent;
+                }
+
+                td {
+                    padding: 4px 6px;
+                    border-bottom: 1px solid #e5e5e5;
+                    border-left: 1px solid #e5e5e5;
+                    background-color: #fff;
+                }
+
+                body {
+                    font-family: Verdana, Arial, Helvetica, sans-serif;
+                    font-size: 80%;
+                }
+
+                td.value img {
+                    vertical-align: middle;
+                    margin: 5px 5px 5px 0;
+                }
+
+                th {
+                    text-align: left;
+                    vertical-align: top;
+                }
+
+                td.last {
+                    border-bottom: 1px solid #e5e5e5;
+                }
+
+                td.first {
+                    border-top: 1px solid #e5e5e5;
+                }
+
+                .auraltext {
+                    position: absolute;
+                    font-size: 0;
+                    left: -1000px;
+                }
+
+                table {
+                    background-image: url(bg_fade.png);
+                    background-repeat: repeat-x;
+                    background-position: left top;
+                    width: 87em;
+                }
+
+                caption {
+                    font-size: 90%;
+                    font-style: italic;
+                }
+            </style>
+            <table cellspacing="0" cellpadding="0">
+                {{-- <caption align="top">Top banana importers 1998 (value of banana imports in millions of US dollars per
+                    million people)<br><br></caption> --}}
+                <tbody>
+                    {{-- <tr>
+                        <th scope="col"><span class="auraltext">Country</span> </th>
+                        <th scope="col"><span class="auraltext">Millions of US dollars per million people</span> </th>
+                    </tr> --}}
+                    <tr>
+                        <td class="first">Not In School</td>
+                        <td class="value first"><img src="bar.png" alt="" width="20" height="16">25% Decreased
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>In School</td>
+                        <td class="value"><img src="bar.png" alt="" width="350" height="16">90% Increased</td>
+                    </tr>
+                    <tr>
+                        <td>Dropped Out</td>
+                        <td class="value"><img src="bar.png" alt="" width="18" height="16">10% Decreased</td>
+                    </tr>
+                    <tr>
+                        <td>Finished</td>
+                        <td class="value"><img src="bar.png" alt="" width="260" height="16">75% Increased</td>
+                    </tr>
+                    <tr>
+                        <td>Career Experience </td>
+                        <td class="value"><img src="bar.png" alt="" width="350" height="16">90% Increased</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </section> <!-- END FEATURES-2 -->
-    
+
     <!-- FAQs-1
-                                ============================================= -->
+                                                ============================================= -->
     <section id="faqs-1" class="bg-fixed wide-100 faqs-section division">
         <div class="container">
 
@@ -452,6 +589,7 @@
                     </h5>
                 </div>
             </div>
+
         </div> <!-- End container -->
     </section> <!-- END FAQs-1 -->
 @endsection
